@@ -2,6 +2,8 @@
 require 'rubygems'
 require 'bundler/setup'
 
+require 'locomotive_plugins'
+
 # This is a quick-and-dirty basic authentication plugin. The login string and
 # password are stored in plaintext in the config hash, so it is not secure. The
 # configuration also takes a regular expression which specifies the page
