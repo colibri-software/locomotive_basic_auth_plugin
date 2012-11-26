@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'locomotive_plugins',    '~> 1.0.0.beta'
 
   s.add_development_dependency 'rspec',     '~> 2.12'
+  s.add_development_dependency 'mocha',     '~> 0.13'
 
   s.required_rubygems_version = ">= 1.3.6"
 
