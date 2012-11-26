@@ -24,14 +24,17 @@ module BasicAuth
     protected
 
     def authenticate
-      authenticate_or_request_with_http_basic do |username, password|
+      controller.authenticate_or_request_with_http_basic do |username, password|
         username == config['login'] && password == config['password']
       end
     end
 
     def need_to_authenticate?
-      controller.params['path'] =~ Regexp.new(
-        config['fullpath_regex'].gsub(/^\/+|\/+$/, ''))
+      fullpath =~ Regexp.new(config['fullpath_regex'])
+    end
+
+    def fullpath
+      controller.params['path'] || ''
     end
 
   end

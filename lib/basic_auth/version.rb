@@ -1,4 +1,4 @@
 
-module BasicAuthVisitCounter
+module BasicAuth
   VERSION = '0.0.1.alpha'
 end
