@@ -12,16 +12,28 @@ module BasicAuth
     end
 
     it 'should authenticate if the page path matches the regex' do
-      set_regex_string('^my_dir/.*$')
+      set_regex_string('my_dir/.*')
       plugin.expects(:authenticate)
       plugin.authenticate_if_needed
     end
 
-    it 'should not authenticate if the page path matches the regex'
+    it 'should not authenticate if the page path matches the regex' do
+      set_regex_string('other_path')
+      plugin.expects(:authenticate).never
+      plugin.authenticate_if_needed
+    end
 
-    it 'should match the entire string against the regex'
+    it 'should not match the entire string against the regex by default' do
+      set_regex_string('my_dir')
+      plugin.expects(:authenticate)
+      plugin.authenticate_if_needed
+    end
 
-    it 'should match the entire string if the regex has beginning and ending markers'
+    it 'should match the entire string if the regex has beginning and ending markers' do
+      set_regex_string('^my_dir/.*$')
+      plugin.expects(:authenticate)
+      plugin.authenticate_if_needed
+    end
 
     protected
 
