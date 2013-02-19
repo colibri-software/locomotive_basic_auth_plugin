@@ -40,7 +40,4 @@ module BasicAuth
     end
 
   end
-
-  LocomotivePlugins.register_plugin(BasicAuth)
-
 end
