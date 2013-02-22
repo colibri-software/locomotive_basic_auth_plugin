@@ -13,7 +13,7 @@ module BasicAuth
 
     include Locomotive::Plugin
 
-    before_page_load :authenticate_if_needed
+    before_page_render :authenticate_if_needed
 
     def config_template_file
       File.join(File.dirname(__FILE__), 'basic_auth', 'config.haml')
