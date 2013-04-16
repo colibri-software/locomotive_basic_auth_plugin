@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    basic_auth (0.0.1.alpha)
+    basic_auth (1.0.0)
       locomotive_plugins (~> 1.0.0.beta)
 
 GEM
