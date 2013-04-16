@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://www.colibri-software.com"
   s.summary     = "Locomotive plugin for adding basic authentication to pages of a site"
 
-  s.add_dependency 'locomotive_plugins',    '~> 1.0.0.beta9'
+  s.add_dependency 'locomotive_plugins',    '~> 1.0.0.beta'
 
   s.add_development_dependency 'rspec',     '~> 2.12'
   s.add_development_dependency 'mocha',     '~> 0.13'
