@@ -8,7 +8,7 @@ require 'locomotive_plugins'
 # password are stored in plaintext in the config hash, so it is not secure. The
 # configuration also takes a regular expression which specifies the page
 # fullpaths which require basic authentication
-module BasicAuth
+module BasicAuthHBPlugin
   class BasicAuth
 
     include Locomotive::Plugin
