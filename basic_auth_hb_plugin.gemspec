@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'basic_auth/version'
+require 'basic_auth_hb_plugin/version'
 
 Gem::Specification.new do |s|
   s.name        = "basic_auth_hb_plugin"
