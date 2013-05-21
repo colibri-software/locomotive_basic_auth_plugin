@@ -16,7 +16,7 @@ module BasicAuth
     before_page_render :authenticate_if_needed
 
     def config_template_file
-      File.join(File.dirname(__FILE__), 'basic_auth', 'config.haml')
+      File.join(File.dirname(__FILE__), 'basic_auth_hb_plugin', 'config.haml')
     end
 
     def authenticate_if_needed
