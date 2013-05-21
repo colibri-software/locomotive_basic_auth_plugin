@@ -6,7 +6,7 @@ require 'basic_auth_hb_plugin/version'
 
 Gem::Specification.new do |s|
   s.name        = "basic_auth_hb_plugin"
-  s.version     = BasicAuth::VERSION
+  s.version     = BasicAuthHBPlugin::VERSION
   s.platform    = Gem::Platform::RUBY
 
   s.authors     = ["Colibri Software"]
