@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module BasicAuthHBPlugin
+module BasicAuthHbPlugin
   describe BasicAuth do
 
     let(:config) { Hash.new }
