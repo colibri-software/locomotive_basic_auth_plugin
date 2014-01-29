@@ -5,10 +5,11 @@ module BasicAuthHbPlugin
 
     let(:config) { Hash.new }
 
-    let(:plugin) { BasicAuth.new(config) }
+    let(:plugin) { BasicAuth.new }
 
     before(:each) do
       plugin.stubs(:fullpath => 'my_dir/my_path')
+      plugin.stubs(:config).returns(config)
     end
 
     it 'should authenticate if the page path matches the regex' do

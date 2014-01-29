@@ -1,4 +1,4 @@
 
 module BasicAuthHbPlugin
-  VERSION = '1.0.0.rc2'
+  VERSION = '1.1.0'
 end
