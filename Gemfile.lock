@@ -1,26 +1,26 @@
 PATH
   remote: .
   specs:
-    basic_auth_hb_plugin (1.0.0.rc2)
-      locomotive_plugins (~> 1.0.1)
+    basic_auth_hb_plugin (1.1.0)
+      locomotive_plugins (~> 1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (3.2.16)
-      activesupport (= 3.2.16)
+    activemodel (3.2.19)
+      activesupport (= 3.2.19)
       builder (~> 3.0.0)
-    activesupport (3.2.16)
+    activesupport (3.2.19)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    bson (1.9.2)
-    bson_ext (1.9.2)
-      bson (~> 1.9.2)
+    bson (1.10.2)
+    bson_ext (1.10.2)
+      bson (~> 1.10.2)
     builder (3.0.4)
     diff-lcs (1.1.3)
     haml (4.0.5)
       tilt
-    i18n (0.6.9)
+    i18n (0.6.11)
     locomotive_liquid (2.4.2)
     locomotive_plugins (1.0.1)
       bson_ext
@@ -36,7 +36,7 @@ GEM
       origin (~> 1.0)
       tzinfo (~> 0.3.29)
     moped (1.5.2)
-    multi_json (1.8.4)
+    multi_json (1.10.1)
     origin (1.1.0)
     rspec (2.12.0)
       rspec-core (~> 2.12.0)
@@ -46,8 +46,8 @@ GEM
     rspec-expectations (2.12.1)
       diff-lcs (~> 1.1.3)
     rspec-mocks (2.12.2)
-    tilt (2.0.0)
-    tzinfo (0.3.38)
+    tilt (2.0.1)
+    tzinfo (0.3.40)
 
 PLATFORMS
   ruby

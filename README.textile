@@ -1,0 +1,39 @@
+h1. Basic Auth Plugin
+
+This is a plugin for LocomotiveCMS. It was created to allow LocomotiveCMS designers to add basic auth to specific pages.
+
+h2. Installation
+
+To use this plugin you must be using a version of LocomotiveCMS that has the plugins feature designed by "Colibri Software":https://www.colibri-software.com. You can do this by making the following changes to the Gemfile in you app:
+
+* Remove or comment out the following line:
+@gem 'locomotive_cms', '~> 2.X.X', require: 'locomotive/engine'@
+* Add the following line:
+@gem 'locomotive_cms', require: 'locomotive/engine', git: 'https://github.com/colibri-software/locomotive_engine.git', branch: 'plugins'@
+
+Then add the following lines in your Gemfile to include the plugin:
+<pre><code>group :locomotive_plugins do
+  gem 'basic_auth_hb_plugin', git: https://github.com/colibri-software/basic_auth_hb_plugin.git'
+end</code></pre>
+
+h2. Usage
+
+h3. Configuring Plugin
+
+This plugin provides a configuration menu to setup the basic auth. The following are the avaiable options:
+
+* Login - the login name to be used
+* Password - The password to be used
+* Page fullpath regexp - a regexp that matches all the pages that need to be secured with basic auth
+
+h3. Liquid Drops
+
+No liquid drops are provided
+
+h3. Liquid Tags
+
+No liquid tags are provided
+
+h3. Liquid Filters
+
+No liquid filters are provided
