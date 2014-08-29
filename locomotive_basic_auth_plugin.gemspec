@@ -2,11 +2,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'basic_auth_hb_plugin/version'
+require 'locomotive/basic_auth/plugin/version'
 
 Gem::Specification.new do |s|
-  s.name        = "basic_auth_hb_plugin"
-  s.version     = BasicAuthHbPlugin::VERSION
+  s.name        = "locomotive_basic_auth_plugin"
+  s.version     = Locomotive::BasicAuth::VERSION
   s.platform    = Gem::Platform::RUBY
 
   s.authors     = ["Colibri Software"]

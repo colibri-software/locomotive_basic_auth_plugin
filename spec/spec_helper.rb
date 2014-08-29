@@ -1,5 +1,5 @@
 
-require 'basic_auth_hb_plugin'
+require 'locomotive/basic_auth/plugin'
 
 # Set up mongoid
 # TODO: should be a convenience method for this in locomotive_plugins
