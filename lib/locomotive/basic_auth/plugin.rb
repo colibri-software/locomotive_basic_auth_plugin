@@ -16,6 +16,10 @@ module Locomotive
 
       before_page_render :authenticate_if_needed
 
+      def self.default_plugin_id
+        'basic_auth'
+      end
+
       def config_template_file
         File.join(File.dirname(__FILE__), 'plugin', 'config.haml')
       end
